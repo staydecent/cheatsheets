@@ -1,6 +1,6 @@
 ---
-title: Ansible - Getting started
-layout: default
+title: Getting started
+category: Ansible
 ---
 
 ### Install Ansible

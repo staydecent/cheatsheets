@@ -1,6 +1,6 @@
 ---
 title: Handlebars.js
-layout: default
+category: JavaScript libraries
 ---
 
 ### Helpers

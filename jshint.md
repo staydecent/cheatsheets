@@ -1,6 +1,6 @@
 ---
 title: Jshint
-layout: default
+category: JavaScript libraries
 ---
 
 ### [Relaxing](http://www.jshint.com/docs/options/#relaxing-options)

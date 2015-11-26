@@ -1,6 +1,6 @@
 ---
-title: Node.js - assert
-layout: default
+title: assert
+category: Node.js
 ---
 
     assert(val)

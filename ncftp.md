@@ -1,6 +1,6 @@
 ---
 title: ncftp
-layout: default
+category: CLI
 ---
 
 Bookmarking

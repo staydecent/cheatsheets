@@ -1,6 +1,6 @@
 ---
 title: Kramdown
-layout: default
+category: Markup
 ---
 
 ### Configuration

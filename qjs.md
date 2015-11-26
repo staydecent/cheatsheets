@@ -1,6 +1,6 @@
 ---
 title: Q.js
-layout: default
+category: JavaScript libraries
 ---
 
 ### Creating promises (Q.promise)

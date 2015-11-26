@@ -1,6 +1,6 @@
 ---
 title: Rdoc
-layout: default
+category: Markup
 ---
 
 ### Basic RDoc format

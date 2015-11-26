@@ -1,6 +1,6 @@
 ---
 title: CSS tricks
-layout: default
+category: CSS
 ---
 
 ### Heading kerning pairs and ligature

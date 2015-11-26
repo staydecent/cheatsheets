@@ -1,6 +1,6 @@
 ---
 title: Shell.js
-layout: default
+category: JavaScript libraries
 ---
 
 ### Require

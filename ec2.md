@@ -1,6 +1,6 @@
 ---
 title: EC2 API tools
-layout: default
+category: Devops
 ---
 
 ### Install

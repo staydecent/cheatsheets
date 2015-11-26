@@ -1,6 +1,6 @@
 ---
 title: Express.js
-layout: default
+category: JavaScript libraries
 ---
 
 ### Settings

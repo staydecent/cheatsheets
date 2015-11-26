@@ -1,6 +1,6 @@
 ---
 title: Moment.js
-layout: default
+category: JavaScript libraries
 ---
 
 ### Formatting

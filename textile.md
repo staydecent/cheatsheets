@@ -1,6 +1,6 @@
 ---
 title: Textile
-layout: default
+category: Markup
 ---
 
 ### Pre blocks

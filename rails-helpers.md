@@ -1,6 +1,6 @@
 ---
-title: Rails helpers
-layout: default
+title: Helpers
+category: Rails
 ---
 
 ### Date

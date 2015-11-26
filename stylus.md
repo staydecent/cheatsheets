@@ -1,6 +1,6 @@
 ---
 title: Stylus
-layout: default
+category: CSS
 ---
 
 ### Variables

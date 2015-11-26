@@ -1,6 +1,6 @@
 ---
 title: Machinist
-layout: default
+category: Ruby libraries
 ---
 
 ### Installing

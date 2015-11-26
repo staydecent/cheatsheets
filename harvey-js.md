@@ -1,6 +1,6 @@
 ---
 title: Harvey.js
-layout: default
+category: JavaScript libraries
 ---
 
 ### Usage

@@ -1,6 +1,6 @@
 ---
 title: Sed
-layout: default
+category: CLI
 ---
 
 ### OSX Caveat

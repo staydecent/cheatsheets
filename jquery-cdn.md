@@ -1,6 +1,6 @@
 ---
 title: jQuery CDN
-layout: default
+category: JavaScript libraries
 ---
 
 ### Google jQuery

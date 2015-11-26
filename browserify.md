@@ -1,13 +1,17 @@
 ---
 title: Browserify
-layout: default
+category: JavaScript libraries
 ---
-
 
     browserify input.js
       -o output.js
       -t coffeeify
       -t [ coffeeify --extension coffee ]
+
+      -u react (--exclude: omit a file)
+      -x react (--external: reference in another bundle)
+      -i react (--ignore: stub a file)
+      -s Myapp (--standalone: generate a UMD bundle)
       --debug
 
 ### Programmatic usage

@@ -1,6 +1,6 @@
 ---
 title: Rtorrent
-layout: default
+category: CLI
 ---
 
 ### Global

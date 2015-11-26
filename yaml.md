@@ -1,6 +1,6 @@
 ---
 title: Yaml
-layout: default
+category: Markup
 ---
 
     Multiline: |

@@ -1,6 +1,6 @@
 ---
 title: Nock
-layout: default
+category: JavaScript libraries
 ---
 
 ### Nock

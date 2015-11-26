@@ -1,6 +1,6 @@
 ---
 title: Git tricks
-layout: default
+category: Git
 ---
 
 ## Refs
@@ -100,19 +100,24 @@ Misc
 
 ## Bisect
 
+    git bisect start HEAD HEAD~6
+    git bisect run npm test
+    git checkout refs/bisect/bad   # this is where it screwed up
+    git bisect reset
+
+### Manual bisection
+
     git bisect start
-    git bisect bad    # current version is bad
+    git bisect good   # current version is good
 
     git checkout HEAD~8
     npm test          # see if it's good
-    git bisect good   # current version is good
+    git bisect bad    # current version is bad
 
-    git bisect run npm test
+    git bisect reset  # abort
 
-    git bisect reset   # abort
+## Searching
 
-### Quicker
-
-    git bisect start HEAD HEAD~10 --   # culprit is among the last test
-    git bisect run make
-    git bisect reset
+    git log --grep="fixes things"  # search in commit messages
+    git log -S"window.alert"       # search in code
+    git log -G"foo.*"              # search in code (regex)

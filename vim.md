@@ -1,6 +1,6 @@
 ---
 title: vim
-layout: default
+category: Vim
 ---
 
  * [Digraphs](vim-digraphs.html)

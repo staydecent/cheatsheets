@@ -1,6 +1,6 @@
 ---
 title: Sinon-chai
-layout: default
+category: JavaScript libraries
 ---
 
   * [Sinon-chai](https://github.com/domenic/sinon-chai)

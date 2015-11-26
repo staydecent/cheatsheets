@@ -1,6 +1,6 @@
 ---
 title: Tabular
-layout: default
+category: Vim
 ---
 
 ### Examples

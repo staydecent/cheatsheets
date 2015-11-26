@@ -1,6 +1,6 @@
 ---
 title: Jasmine
-layout: default
+category: JavaScript libraries
 ---
 
     describe("A suite", function() {
@@ -61,8 +61,8 @@ layout: default
     stub = jasmine.createSpy('stub')
     stub("hello")
 
-    expect(whatAmI.identity).toEqual("stub")
-    expect(whatAmI).toHaveBeenCalled()
+    expect(stub.identity).toEqual("stub")
+    expect(stub).toHaveBeenCalled()
 
 ### Async
 

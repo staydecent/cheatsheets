@@ -1,6 +1,6 @@
 ---
 title: Markdown
-layout: default
+category: Markup
 ---
 
 ### Headers

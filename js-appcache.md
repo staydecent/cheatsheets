@@ -1,6 +1,6 @@
 ---
 title: applicationCache
-layout: default
+category: JavaScript
 ---
 
 ### applicationCache checking

@@ -1,6 +1,6 @@
 ---
 title: Cron
-layout: default
+category: CLI
 ---
 
 ### Format

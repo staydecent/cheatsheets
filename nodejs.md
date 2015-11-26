@@ -1,6 +1,6 @@
 ---
 title: Node.js API
-layout: default
+category: Node.js
 ---
 
 ## Globals

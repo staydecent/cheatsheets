@@ -1,6 +1,6 @@
 ---
-title: Rails migrations
-layout: default
+title: Migrations
+category: Rails
 ---
 
 ### Automatically make migrations

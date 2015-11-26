@@ -1,6 +1,6 @@
 ---
 title: Find
-layout: default
+category: CLI
 ---
 
 ### Usage

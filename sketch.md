@@ -1,6 +1,6 @@
 ---
 title: Sketch
-layout: default
+category: Apps
 ---
 
 ### Insert

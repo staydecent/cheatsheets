@@ -1,6 +1,6 @@
 ---
 title: Bower API
-layout: default
+category: JavaScript libraries
 ---
 
     require('bower').config

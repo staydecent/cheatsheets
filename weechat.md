@@ -1,6 +1,6 @@
 ---
 title: Weechat
-layout: default
+category: Apps
 ---
 
 ### Keys

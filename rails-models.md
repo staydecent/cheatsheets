@@ -1,24 +1,43 @@
 ---
-title: Rails Models
-layout: default
+title: Models
+category: Rails
 ---
 
-### [Query methods](http://devdocs.io/rails/activerecord/querymethods#method-i-order)
+### [QueryMethods](http://devdocs.io/rails/activerecord/querymethods)
 
 ```rb
 items = Model
-  .where(first_name: "Harvey")
+  .where(first_name: 'Harvey')
+  .where('id = 3')
+  .where('id = ?', 3)
 
   .order(:title)
   .order(title: :desc)
   .order("title DESC")
 
-  .reorder(:title)  # discards other .orders
-  .rewhere(...)
+  .reorder(:title)  # discards other .order's
+  .rewhere(...)     # discards other .where's
 
   .limit(2)
   .offset(1)
   .uniq
+```
+
+Advanced:
+
+```rb
+  .select(:id)
+  .select([:id, :name])
+
+  .group(:name)   # GROUP BY name
+  .group('name AS grouped_name, age')
+  .having('SUM(price) > 30')  # needs to be chained with .group
+
+  .includes(:user)
+  .includes(user: [:articles])
+
+  .references(:posts)
+  # .where("posts.name = 'foo'").references(:posts)
 ```
 
 ### [FinderMethods](http://devdocs.io/rails/activerecord/findermethods)
@@ -49,18 +68,16 @@ item.serialize_hash
 item.save
 item.save!      # Same as above, but raises an Exception
 
-item.update name: "John"
-item.update!
+item.update  name: 'John'  # Saves immediately
+item.update! name: 'John'
 
-item.update_column  :name, "John"  # skips validations and callbacks
-item.update_columns  name: "John"
-item.update_columns! name: "John"
 
-item.touch  # updates :updated_at
+item.update_column  :name, 'John'  # skips validations and callbacks
+item.update_columns  name: 'John'
+item.update_columns! name: 'John'
+
+item.touch                 # updates :updated_at
 item.touch :published_at
-
-item.valid?
-item.invalid?
 
 item.destroy
 item.delete  # skips callbacks
@@ -71,8 +88,59 @@ Model.create     # Same an #new then #save
 Model.create!    # Same as above, but raises an Exception
 ```
 
-### Sorting
+### [AttributeAssignment](http://devdocs.io/rails/activerecord/attributeassignment)
 
+```rb
+item.attributes                      # #<Hash>
+
+item.attributes = { name: 'John' }   # Merges attributes in. Doesn't save.
+item.assign_attributes name: 'John'  # Same as above
+```
+
+### [Dirty](http://devdocs.io/rails/activemodel/dirty)
+
+```rb
+item.changed?
+item.changed             # ['name']
+item.changed_attributes  # { 'name' => 'Bob' } - original values
+item.changes             # { 'name' => ['Bob', 'Robert'] }
+item.previous_changes    # available after #save
+item.restore_attributes
+
+item.name = 'Robert'
+item.name_was         # 'Bob'
+item.name_change      # [ 'Bob', 'Robert' ]
+item.name_changed?    # true
+item.name_changed?(from: 'Bob', to: 'Robert')
+```
+
+### [Validations](http://devdocs.io/rails/activerecord/validations)
+
+```rb
+item.valid?
+item.invalid?
+```
+
+### [Calculations](http://devdocs.io/rails/activerecord/calculations)
+
+```rb
+Person.count
+Person.count(:age)    # counts non-nil's
+
+Person.average(:age)
+Person.maximum(:age)
+Person.minimum(:age)
+Person.sum('2 * age')
+
+Person.calculate(:count, :all)
+```
+
+Advanced:
+
+```
+Person.distinct.count
+Person.group(:city).count
+```
 
 Generating
 ----------

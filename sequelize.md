@@ -1,6 +1,6 @@
 ---
 title: Sequelize
-layout: default
+category: Ruby libraries
 ---
 
 ### API

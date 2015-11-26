@@ -1,6 +1,6 @@
 ---
 title: Ractive.js
-layout: default
+category: JavaScript libraries
 vim: ft=javascript
 ---
 

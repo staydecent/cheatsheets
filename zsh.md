@@ -1,6 +1,6 @@
 ---
 title: Zsh
-layout: default
+category: CLI
 ---
 
 ### Stuff

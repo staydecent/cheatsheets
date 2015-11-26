@@ -1,6 +1,6 @@
 ---
 title: Vagrant
-layout: default
+category: Devops
 ---
 
 ### Get started

@@ -1,6 +1,6 @@
 ---
-title: Node.js - process
-layout: default
+title: process
+category: Node.js
 ---
 
 ### Streams

@@ -1,6 +1,6 @@
 ---
 title: IE bugs
-layout: default
+category: HTML
 ---
 
 ### IE8: 'change' event doesn't always fire

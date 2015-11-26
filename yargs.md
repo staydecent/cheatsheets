@@ -1,5 +1,6 @@
 ---
 title: Yargs
+category: JavaScript libraries
 ---
 
 ### Basic usage

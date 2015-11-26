@@ -1,6 +1,6 @@
 ---
 title: Gremlins.js
-layout: default
+category: JavaScript libraries
 ---
 
 ### Example

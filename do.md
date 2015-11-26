@@ -1,6 +1,6 @@
 ---
 title: Do gem
-layout: default
+category: Ruby libraries
 ---
 
  * [DAddYE/do](https://github.com/DAddYE/do)

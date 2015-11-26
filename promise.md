@@ -1,6 +1,6 @@
 ---
 title: Promises
-layout: default
+category: JavaScript
 ---
 
 Based on the [Promise API reference][promise] (mozilla.org).

@@ -1,6 +1,6 @@
 ---
-title: Rspec-rails controllers
-layout: default
+title: Rspec-rails
+category: Ruby
 ---
 
 ### Spec tasks
@@ -40,6 +40,9 @@ describe MyController do
       expect(response).to be_success
       expect(response).to have_http_status(200)
       expect(response).to render_template("index")
+      expect(response).to redirect_to '/..'
+
+      expect(assigns :article).to eq article
 
       response.status
     end
@@ -109,6 +112,22 @@ describe EventsHelper do
 end
 ```
 
+### Features
+
+```rb
+# spec/features/*.rb
+feature 'Signing in' do
+  given(:something) { "hi" }
+
+  background do
+    User.make email: 'hi@gmail.com'
+  end
+
+  scenario 'Signing in with credentials' do
+  end
+end
+```
+
 ### Matchers
 
 ```rb
@@ -120,4 +139,16 @@ route_to(..)
 be_routable
 have_http_status(500)
 have_http_status(:created)
+```
+
+### Time helpers
+
+```
+travel_to Time.new(2014, 11, 14, 01, 04, 44)
+...
+travel_back
+
+travel_to Time.new(2014, 11, 14, 01, 04, 44) do
+  ...
+end
 ```

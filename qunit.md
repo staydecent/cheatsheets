@@ -1,6 +1,6 @@
 ---
 title: Qunit
-layout: default
+category: JavaScript libraries
 ---
 
     QUnit.module('a');

@@ -1,6 +1,6 @@
 ---
 title: Inkscape
-layout: default
+category: Apps
 ---
 
 ### All

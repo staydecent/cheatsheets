@@ -1,6 +1,6 @@
 ---
 title: httpie
-layout: default
+category: CLI
 ---
 
     $ http POST example.com/posts/3 \

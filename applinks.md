@@ -1,6 +1,6 @@
 ---
 title: Applinks
-layout: default
+category: HTML
 ---
 
 

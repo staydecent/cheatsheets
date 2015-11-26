@@ -1,6 +1,6 @@
 ---
-title: Rails routes
-layout: default
+title: Routes
+category: Rails
 ---
 
 ### Multiple resources

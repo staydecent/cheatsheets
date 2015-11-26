@@ -1,6 +1,6 @@
 ---
 title: JavaScript Date
-layout: default
+category: JavaScript
 ---
 
 ### Constructor

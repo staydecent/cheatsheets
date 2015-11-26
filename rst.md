@@ -1,6 +1,6 @@
 ---
 title: ReStructuredText
-layout: default
+category: Markup
 ---
 
 ### Comments

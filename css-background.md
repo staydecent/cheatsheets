@@ -1,6 +1,6 @@
 ---
-title: CSS
-layout: default
+title: CSS background
+category: CSS
 ---
 
 Background

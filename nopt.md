@@ -1,6 +1,6 @@
 ---
 title: Nopt
-layout: default
+category: JavaScript libraries
 ---
 
 ```js

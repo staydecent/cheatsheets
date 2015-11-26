@@ -1,6 +1,6 @@
 ---
 title: npm
-layout: default
+category: JavaScript
 ---
 
     npm install

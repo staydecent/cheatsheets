@@ -1,6 +1,6 @@
 ---
 title: Modella
-layout: default
+category: JavaScript libraries
 ---
 
 ### Basic

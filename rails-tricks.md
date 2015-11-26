@@ -1,6 +1,6 @@
 ---
 title: Rails tricks
-layout: default
+category: Rails
 ---
 
 in config/environments/development.rb:

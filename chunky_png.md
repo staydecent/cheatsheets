@@ -1,6 +1,6 @@
 ---
 title: Chunky PNG
-layout: default
+category: Ruby libraries
 ---
 
 ### Loading

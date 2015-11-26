@@ -1,6 +1,6 @@
 ---
 title: HTML
-layout: default
+category: HTML
 ---
 
 ### Head stuff

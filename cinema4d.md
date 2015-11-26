@@ -1,6 +1,6 @@
 ---
 title: Cinema4d
-layout: default
+category: Apps
 ---
 
     E R T   : Move/rotate/scale

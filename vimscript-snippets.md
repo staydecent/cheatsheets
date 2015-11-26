@@ -1,5 +1,6 @@
 ---
 title: Vimscript snippets
+category: Vim
 ---
 
 ### Bind function to key and command
@@ -11,7 +12,7 @@ title: Vimscript snippets
 
 ### Call a function in insert mode
 
-    inoremap X <CR>=script#myfunction()<CR>
+    inoremap X <C-R>=script#myfunction()<CR>
     inoremap <F2> <C-R>=MyVimFunc()?'':''<CR>
 
 ### Checking plugins
@@ -28,4 +29,12 @@ title: Vimscript snippets
     endfunction
 
     " calling hello#method() will load only if autoload()
+
+## Misc
+
+### Version check
+
+    if version < 704
+      echom "requires vim >= 7.4"
+    endif
 

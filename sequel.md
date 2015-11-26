@@ -1,6 +1,6 @@
 ---
 title: Sequel
-layout: default
+category: Ruby libraries
 ---
 
 ### Open a database

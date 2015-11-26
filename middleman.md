@@ -1,6 +1,6 @@
 ---
 title: Middleman 3
-layout: default
+category: JavaScript libraries
 ---
 
 **NB:** This is for Middleman 3, not Middleman 4+.

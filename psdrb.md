@@ -1,6 +1,6 @@
 ---
 title: PSD.rb
-layout: default
+category: Ruby libraries
 ---
 
 ### Opening

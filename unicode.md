@@ -1,6 +1,5 @@
 ---
 title: Unicode symbols
-layout: default
 ---
 
     ✈   \u2708 airplane
@@ -9,6 +8,7 @@ layout: default
     ☯   \u262f yinyang
     ♞   \u265e horse
     ☀   \u2600 rays
+    ⚠   \u26a0 warning
 
     ★   star
     ☆   star2

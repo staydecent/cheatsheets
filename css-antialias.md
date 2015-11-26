@@ -1,6 +1,6 @@
 ---
 title: CSS antialiasing
-layout: default
+category: CSS
 ---
 
     * {

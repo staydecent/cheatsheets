@@ -1,5 +1,6 @@
 ---
 title: Vimscript functions
+category: Vim
 ---
 
 Dictionaries
@@ -148,7 +149,7 @@ Functions
 ### Strings
 
     if a =~ '\s*'
-    subst(str, '.', 'x', 'g')
+    substitute(str, '.', 'x', 'g')
     strpart("abcdef", 3, 2)    " == "de" (substring)
     strpart("abcdef", 3)       " == "def"
     stridx("abcdef", "e")      " == "e"
@@ -165,6 +166,10 @@ Functions
     strchars()                  " accounts for composing chars
     strwidth()                  " accounts for ambig characters
     strdisplaywidth()           " accounts for tab stops
+
+    toupper(str)
+    tolower(str)
+    tr('foo', '_-', '  ')
 
 ### Syntax
 
@@ -186,6 +191,17 @@ Functions
 
     getreg('*')
     getregtype('*')     " v(char), V(line) <ctrl-v>(block)
+
+Comparisons
+-----------
+
+    if name ==# 'John'     " case-sensitive
+    if name ==? 'John'     " case-insensitive
+    if name == 'John'      " depends on :set ignorecase
+    " also: is#, is?, >=#, >=?, and so on
+
+    if "hello" =~ '.*'
+    if "hello" !~ '.*'
 
 Executing
 ---------

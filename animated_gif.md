@@ -1,6 +1,6 @@
 ---
 title: Animated gifs
-layout: default
+category: CLI
 ---
 
 ### Convert mp4 to gif

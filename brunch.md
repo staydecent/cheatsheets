@@ -1,6 +1,6 @@
 ---
 title: Brunch
-layout: default
+category: JavaScript libraries
 ---
 
 ## Paths

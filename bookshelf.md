@@ -1,6 +1,6 @@
 ---
 title: Bookshelf.js
-layout: default
+category: JavaScript libraries
 ---
 
 Model

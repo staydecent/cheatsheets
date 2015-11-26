@@ -1,6 +1,6 @@
 ---
 title: Ansible modules
-layout: default
+category: Ansible
 ---
 
 ### Aptitude

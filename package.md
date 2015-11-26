@@ -1,6 +1,6 @@
 ---
-title: Package.json
-layout: default
+title: package.json
+category: Node.js
 ---
 
 ### Basic

@@ -1,6 +1,6 @@
 ---
 title: Ansible examples
-layout: default
+category: Ansible
 ---
 
 ### Examples

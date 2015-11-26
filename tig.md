@@ -1,6 +1,6 @@
 ---
 title: Tig
-layout: default
+category: Git
 ---
 
 ### Installing

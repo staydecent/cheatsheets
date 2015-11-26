@@ -1,6 +1,6 @@
 ---
 title: HTML/CSS
-layout: default
+category: HTML
 ---
 
 ### CSS - Selectors

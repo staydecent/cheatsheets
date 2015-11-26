@@ -1,6 +1,6 @@
 ---
 title: RSpec
-layout: default
+category: Ruby
 ---
 
 ### Invoking tests
@@ -59,7 +59,7 @@ be < 6
 == 5
 equal value
 be_between(1, 10)
-be_close value, tolerance
+be_within(0.05).of value
 
 be value
 satisfy {|arg| ...}
@@ -97,45 +97,48 @@ expect { thing.approve! }.to change(thing, :status).
 expect { thing.destroy }.to change(Thing, :count).by(-1)
 ```
 
-### Mocking - basic
+### Double
 
-    book.stub(:title) { "The RSpec Book" }
-    book.stub(:title => "The RSpec Book")
-    book.stub(:title).and_return("The RSpec Book")
+```rb
+book = double('book')
+book = instance_double('Book', pages: 250)
+```
 
-    # First arg is a name, it's optional
-    book = double("book", :title => "The RSpec Book")
+### Method stubs
 
-### Mocking - consecutive return values
+```rb
+allow(die).to receive(:roll)
+allow(die).to receive(:roll) { 3 }
 
-    die.stub(:roll).and_return(1,2,3)
-    die.roll # => 1
-    die.roll # => 2
-    die.roll # => 3
-    die.roll # => 3
-    die.roll # => 3
+expect(die).to receive(:roll)
+  .with(1)
+  .with(1, true)
+  .with(boolean)
+  .with(anything)
+  .with(any_args)
+  .with(1, any_args)
+  .with(no_args)
+  .with(hash_including(a: 1))
+  .with(hash_excluding(a: 1))
+  .with(array_including(:a, :b))
+  .with(array_excluding(:a, :b))
+  .with(instance_of(Fixnum))
+  .with(kind_of(Numeric))
+  .with(<matcher>)
 
-### Expectations
 
-    expect(double).to receive(:msg)
-    expect(double).to receive(:msg).with(no_args())
-    expect(double).to receive(:msg).with(any_args())
-    expect(double).to receive(:msg).with(1, kind_of(Numeric), "b") #2nd argument can any kind of Numeric
-    expect(double).to receive(:msg).with(1, boolean(), "b") #2nd argument can true or false
-    expect(double).to receive(:msg).with(1, /abc/, "b") #2nd argument can be any String matching the submitted Regexp
-    expect(double).to receive(:msg).with(1, anything(), "b") #2nd argument can be anything at all
-    expect(double).to receive(:msg).with(1, ducktype(:abs, :div), "b") #2nd argument can be object that responds to #abs and #div
+  .once
+  .twice
+  .exactly(n).times
+  .at_least(:once)
+  .at_least(:twice)
+  .at_least(n).times
+  .at_most(:once)
+  .at_most(:twice)
+  .at_most(n).times
+```
 
-    expect(double).to receive(:msg).once
-    expect(double).to receive(:msg).twice
-    expect(double).to receive(:msg).exactly(n).times
-    expect(double).to receive(:msg).at_least(:once)
-    expect(double).to receive(:msg).at_least(:twice)
-    expect(double).to receive(:msg).at_least(n).times
-    expect(double).to receive(:msg).at_most(:once)
-    expect(double).to receive(:msg).at_most(:twice)
-    expect(double).to receive(:msg).at_most(n).times
-    expect(double).to receive(:msg).any_number_of_times
+https://relishapp.com/rspec/rspec-mocks/docs
 
 ## Subjects
 

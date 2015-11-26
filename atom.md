@@ -1,6 +1,6 @@
 ---
 title: Atom
-layout: default
+category: Apps
 ---
 
 ### Symbols view

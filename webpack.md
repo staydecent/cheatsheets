@@ -1,6 +1,6 @@
 ---
 title: Webpack
-layout: default
+category: JavaScript libraries
 ---
 
 ### Config

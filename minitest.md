@@ -1,6 +1,6 @@
 ---
 title: Minitest
-layout: default
+category: Ruby
 ---
 
 ### Usage

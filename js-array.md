@@ -1,6 +1,6 @@
 ---
 title: JavaScript arrays
-layout: default
+category: JavaScript
 ---
 
 ## JavaScript arrays
@@ -29,6 +29,7 @@ layout: default
     array.concat([X,Y])      //=> [_,_,_,_,_,X,Y]
 
 ### Inserting
+
     // after -- [_,_,REF,NEW,_,_]
     array.splice(array.indexOf(REF)+1, 0, NEW))
 
@@ -47,10 +48,14 @@ layout: default
 
 ### Iterables
 
+    .filter(n => ...) => Array
+
     .find(n => ...)  // es6
     .findIndex(...)  // es6
-    .every(n => ...) // ie9+
-    .some(n => ..)   // ie9+
+
+    .every(n => ...) => Boolean // ie9+
+    .some(n => ..) => Boolean   // ie9+
+
     .map(n => ...)   // ie9+
     .reduce((total, n) => total) // ie9+
     .reduceRight(...)

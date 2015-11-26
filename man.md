@@ -1,6 +1,6 @@
 ---
 title: Man
-layout: default
+category: CLI
 ---
 
 ### Man paths

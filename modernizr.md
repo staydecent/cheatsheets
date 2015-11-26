@@ -1,6 +1,6 @@
 ---
 title: Modernizr
-layout: default
+category: JavaScript libraries
 ---
 
 ### Script

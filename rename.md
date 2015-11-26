@@ -1,6 +1,6 @@
 ---
 title: rename
-layout: default
+category: CLI
 ---
 
 ### Installation

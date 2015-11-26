@@ -1,6 +1,6 @@
 ---
 title: Curl
-layout: default
+category: CLI
 ---
 
 Options:
@@ -11,13 +11,16 @@ Options:
     -v           # --verbose
     -vv          # Even more verbose
 
+    -I           # --head: headers only
+
 Request:
 
-    --request POST
+    -X POST          # --request
 
 Data options:
 
-    -d <data>    # --data: HTTP post data, URL encoded (eg, status="Hello")
+    -d 'data'    # --data: HTTP post data, URL encoded (eg, status="Hello")
+    -d @file     # --data via file
     -G           # --get: send -d data via get
 
 Headers:
@@ -43,3 +46,5 @@ SSL:
     # Auth/data:
       curl -u user:pass -d status="Hello" http://twitter.com/statuses/update.xml
    
+    # multipart file upload
+      curl -v -include --form key1=value1 --form upload=@localfilename URL 

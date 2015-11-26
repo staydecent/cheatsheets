@@ -1,6 +1,6 @@
 ---
 title: Weinre
-layout: default
+category: JavaScript libraries
 ---
 
  * [Weinre](http://people.apache.org/~pmuellr/weinre/)

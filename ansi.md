@@ -1,6 +1,6 @@
 ---
 title: Ansi codes
-layout: default
+category: CLI
 ---
 
 Format

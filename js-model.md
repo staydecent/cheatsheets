@@ -1,6 +1,6 @@
 ---
-title: Js-Model
-layout: default
+title: js-model
+category: JavaScript libraries
 ---
 
     Project = Model "project", ->

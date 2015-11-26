@@ -1,6 +1,6 @@
 ---
-title: "HTML: input tag"
-layout: default
+title: Input tag
+category: HTML
 ---
 
      <input ...

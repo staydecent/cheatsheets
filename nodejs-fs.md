@@ -1,6 +1,6 @@
 ---
-title: Node.js - fs
-layout: default
+title: fs
+category: Node.js
 ---
 
 ### Reading

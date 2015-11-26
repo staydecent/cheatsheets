@@ -1,6 +1,6 @@
 ---
 title: Canvas
-layout: default
+category: JavaScript
 ---
 
 ### Getting the context

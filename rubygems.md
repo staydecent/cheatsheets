@@ -1,6 +1,6 @@
 ---
 title: Rubygems
-layout: default
+category: Ruby
 ---
 
     gem build *.gemspec         # Build a gem

@@ -1,6 +1,6 @@
 ---
-title: Flux
-layout: default
+title: Flux architecture
+category: React
 ---
 
 ## Architecture

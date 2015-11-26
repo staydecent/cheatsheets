@@ -1,6 +1,6 @@
 ---
 title: CSS font
-layout: default
+category: CSS
 ---
 
     font: italic 400    14px     / 1.5       sans-serif;

@@ -1,6 +1,6 @@
 ---
 title: Rsync
-layout: default
+category: CLI
 ---
 
     rsync -avz ./src /dest

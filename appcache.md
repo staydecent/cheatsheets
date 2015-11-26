@@ -1,6 +1,6 @@
 ---
 title: Appcache
-layout: default
+category: HTML
 ---
 
 ### Format

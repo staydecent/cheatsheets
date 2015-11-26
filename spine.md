@@ -1,6 +1,6 @@
 ---
 title: Spine
-layout: default
+category: JavaScript libraries
 vim: ft=python
 ---
 

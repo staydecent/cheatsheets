@@ -1,6 +1,6 @@
 ---
 title: Chef
-layout: default
+category: Devops
 ---
 
 ### Install

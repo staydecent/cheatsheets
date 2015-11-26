@@ -1,6 +1,6 @@
 ---
 title: CSS animations
-layout: default
+category: CSS
 ---
 
     animation: bounce 300ms    linear          100ms infinite alternate-reverse;
