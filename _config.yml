@@ -1,9 +1,4 @@
 # files
-layouts: ./_/layouts
-destination: ./_/site
-sass:
-  sass_dir: ./_/sass
-
 exclude:
   - Makefile
   - README.md
@@ -14,7 +9,7 @@ exclude:
   - _deprecated
 
 # Markdown
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM
@@ -47,6 +42,7 @@ category_names:
   - HTML
   - JavaScript
   - JavaScript libraries
+  - Ledger
   - Markup
   - Node.js
   - Rails

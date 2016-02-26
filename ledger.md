@@ -1,5 +1,6 @@
 ---
 title: Ledger CLI
+category: Ledger
 ---
 
     $ ledger bal
@@ -44,23 +45,23 @@ Format
 
 ### Secondary dates
 
-   2008/01/01=2008/01/14 Client invoice  ;  estimated date you'll be paid
+    2008/01/01=2008/01/14 Client invoice  ;  estimated date you'll be paid
 
 ### Balance assertions
 
-   2008/01/01 * KFC
-     Expenses:Food  $20
-     Assets:Cash   $-20  = $500 ; ensures cash is at $500
+    2008/01/01 * KFC
+      Expenses:Food  $20
+      Assets:Cash   $-20  = $500 ; ensures cash is at $500
 
 ### Balance assignment
 
-   2008/01/01 * Cash balance
-     Assets:Cash   = $500
-     Equity:Adjustments
+    2008/01/01 * Cash balance
+      Assets:Cash   = $500
+      Equity:Adjustments
 
-   2008/01/01 * KFC
-     Expenses:Food  $20
-     Assets:Cash   = $500 ; figures out what's needed to make it $500
+    2008/01/01 * KFC
+      Expenses:Food  $20
+      Assets:Cash   = $500 ; figures out what's needed to make it $500
 
 ### Payables
 
@@ -83,6 +84,7 @@ Format
     ; fixed lot prices
     2010/05/31 * Gas
       Expenses:Gasoline             11 GAL {=$2.299}
+      Assets:Cash
 
 ### Commodity definitions
 
@@ -107,11 +109,11 @@ Format
 
 ### Comments
 
-   ; line comment
-   # also line comment
-   % also line comment
-   | also line comment
-   * also line comment
+    ; line comment
+    # also line comment
+    % also line comment
+    | also line comment
+    * also line comment
 
 ### Periods
 
